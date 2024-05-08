@@ -69,9 +69,8 @@ const deleteTask = async() => {
     }
 ]);
 
-if (deleteIndex.index > 0 && deleteIndex.index <= todoList.length){
+if (deleteIndex > 0 && deleteIndex.index <= todoList.length){
     todoList.splice(deleteIndex.index -1, 1);
-
 console.log ("Task deleted successfully. ");
 }else{
     console.log("Invalid index. Task not deleted. ");   
